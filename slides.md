@@ -22,6 +22,8 @@ class: title-slide
 
 ![](images/scikit-learn-faq.jpg)
 
+[https://scikit-learn.org/stable/faq.html#will-you-add-gpu-support](https://scikit-learn.org/stable/faq.html#will-you-add-gpu-support)
+
 ---
 
 ![:scale 100%](images/skorch.svg)
