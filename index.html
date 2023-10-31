@@ -188,10 +188,16 @@ class: center
 
 ---
 
+.g.g-middle[
+.g-6[
 # Extensions 🔌
-
 - [Linear Algebra](https://data-apis.org/array-api/latest/extensions/linear_algebra_functions.html)
 - [Fourier Transforms](https://data-apis.org/array-api/latest/extensions/fourier_transform_functions.html)
+]
+.g-6.g-center[
+![](images/data_apis.jpg)
+]
+]
 
 ---
 
@@ -277,6 +283,10 @@ lda.fit(X_xp, y_xp)
 
 ---
 
+class: top
+
+<br>
+
 # Using `array_api_compat` 🚀
 
 ```python
@@ -287,6 +297,8 @@ def func(x, y):
     out = xp.mean(x, axis=0) - 2 * xp.std(y, axis=0)
     return out
 ```
+
+--
 
 <br>
 
