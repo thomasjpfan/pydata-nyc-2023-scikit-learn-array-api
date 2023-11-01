@@ -469,7 +469,7 @@ x_mean = np.nanmax(x, axis=1)
 def xp_nanmax(X, axis=None):
     xp = array_namespace(X)
     if is_numpy_namespace(xp):
-        return xp.asarray(numpy.nanmax(axis=axis))
+        return xp.asarray(numpy.nanmax(X, axis=axis))
 
     # Implement using Array API standard (simplified)
     mask = xp.isnan(X)
