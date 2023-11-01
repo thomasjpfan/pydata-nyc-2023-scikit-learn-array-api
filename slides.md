@@ -478,6 +478,10 @@ def xp_nanmax(X, axis=None):
     return X_nanmax
 ```
 
+.smaller[
+[https://github.com/data-apis/array-api/issues/621](https://github.com/data-apis/array-api/issues/621)
+]
+
 ---
 
 class: top
