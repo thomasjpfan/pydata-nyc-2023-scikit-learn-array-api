@@ -376,7 +376,7 @@ class: top
 ```python
 import numpy as np
 
-x_sum = x.sum(axis=0)
+y_sum = y.sum(axis=0)
 ```
 
 --
@@ -385,8 +385,8 @@ x_sum = x.sum(axis=0)
 ```python
 from array_api_compat import array_namespace
 
-xp = array_namespace(x)
-x_sum = xp.sum(x, axis=0)
+xp = array_namespace(y)
+y_sum = xp.sum(y, axis=0)
 
 ```
 
