@@ -358,7 +358,7 @@ class: chapter-slide
 class: top
 <br><br><br>
 
-# Array API has few methods on the object 📦
+# Most methods are in the module 📦
 
 ## NumPy
 
@@ -384,7 +384,7 @@ x_sum = xp.sum(x, axis=0)
 class: top
 <br><br><br>
 
-# Array API has few methods on the object 📦
+# Most methods are in the module 📦
 
 ## NumPy
 ```python
