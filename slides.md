@@ -754,7 +754,7 @@ class: top
 
 --
 
-## Future 🔮
+## Dispatching 🔀
 
 - [uarray](https://uarray.org/en/latest/) - SciPy
 - Plugins - Scikit-learn
