@@ -125,9 +125,9 @@ import sklearn
     y_torch_cuda = torch.asarray(y_np, device="cuda")
 
     lda = LinearDiscriminantAnalysis()
-    lda.fit(X_torch_cpu, y_torch_cpu)
+    lda.fit(X_torch_cuda, y_torch_cuda)
 
-    type(lda.predict(X_torch_cpu))
+    type(lda.predict(X_torch_cuda))
     # <class 'torch.Tensor'>
 ```
 
