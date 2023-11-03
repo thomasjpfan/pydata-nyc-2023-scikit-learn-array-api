@@ -754,22 +754,11 @@ class: chapter-slide
 
 ---
 
-class: top
-<br><br><br>
-
 # Possible Solutions
 
 ## Works Now 🪄
 
 - Convert to NumPy and back - SciPy
-
---
-
-## Dispatching 🔀
-
-- [uarray](https://uarray.org/en/latest/) - SciPy
-- Plugins - Scikit-learn
-- Array library specific code
 
 ---
 
@@ -785,6 +774,35 @@ def func(a, b):
 *   d = xp.asarray(d)
 
     return d
+```
+
+---
+
+# Possible Solutions
+
+## Works Now 🪄
+
+- Convert to NumPy and back - SciPy
+
+## Dispatching 🔀
+
+- [uarray](https://uarray.org/en/latest/) - SciPy
+- Plugins - Scikit-learn
+- Array library specific code
+
+---
+
+# Dispatching 🔀
+
+```python
+def func(a, b, plugin):
+    xp = array_namespace(a, b)
+    c = xp.sum(a, axis=1) + xp.sum(b, axis=1)
+
+*   d = plugin.dispatch_to_library(c)
+
+    e = xp.mean(d, axis=0)
+    return e
 ```
 
 ---
